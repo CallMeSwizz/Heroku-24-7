@@ -5,18 +5,11 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-let time = 0; // Time in minutes
-
-setInterval(async () => {
-  time += 1; // Add one minute to the above defined variable
-  await client.user.setPresence({
-    game: {
-      name: `Gamename for ${time} minutes`,
-      type: 0
-    }
-  });
-}, 60000);
-
+bot.user.setPresence({ 
+    status: 'idle', game: { 
+        name: 'GAME HERE'
+    } 
+});
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.channel.send('hi')
