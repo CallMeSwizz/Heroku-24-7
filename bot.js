@@ -7,13 +7,13 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('pong');
+    	message.say('pong');
   	}
 });
 
 client.on('message', message => {
     if (message.content === '@ʚɞ･ﾟ・Zephypie~, pong') {
-    	message.reply('pong');
+    	message.say('ping');
   	}
 });
 
