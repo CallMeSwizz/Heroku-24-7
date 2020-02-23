@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 bot.user.setPresence({ 
-    status: 'idle', game: { 
+    status: 'online', game: { 
         name: 'GAME HERE'
     } 
 });
