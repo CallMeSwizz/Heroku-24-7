@@ -37,7 +37,7 @@ public class UptimeCommand extends Command
     @Override
     public List<String> getAliases()
     {
-        return Arrays.asList(".uptime");
+        return Arrays.asList("d!uptime");
     }
 
     @Override
