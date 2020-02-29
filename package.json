@@ -1,6 +1,6 @@
 {
-  "name": "Dis-Bot",
-  "description": "Made for Dismon - Pcord server by Intenzi",
+  "name": "Test",
+  "description": "Test",
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
