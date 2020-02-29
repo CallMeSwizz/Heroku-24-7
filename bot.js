@@ -13,6 +13,17 @@ client.on('message', message => {
   	}
 });
 
+client.on("message", (message) => {
+  if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+
+  if (message.content.startsWith(config.prefix + "ping")) {
+    message.channel.send("pong!");
+  } else
+  if (message.content.startsWith(config.prefix + "foo")) {
+    message.channel.send("bar!");
+  }
+});
+
 client.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
   
