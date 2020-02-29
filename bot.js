@@ -1,10 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-{
-"prefix": "d!"
-}
-
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   client.user.setActivity(`Serving ${client.guilds.size} server`);
